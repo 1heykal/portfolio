@@ -1,10 +1,8 @@
 mat-card{
-    width: 45%;
+    width: 40%;
     padding: 50px;
 }
 
-
-  
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
@@ -13,11 +11,14 @@ mat-card{
   img {
   }
   
+  h2{
+    text-align: center;
+  }
 
   #fighters{
-    width: 80%;
     display: flex;
-    justify-content: space-around;
+    padding: 25px;
+    justify-content: space-evenly;
   }
 
   #engineer {
@@ -29,4 +30,8 @@ mat-card{
   }
   #writerBtn {
     background-image: url('/src/assets/svgs/binary.svg');
+    background-color: #ff9f1c;
+  }
+  mat-card-actions{
+    justify-content: center;
   }
