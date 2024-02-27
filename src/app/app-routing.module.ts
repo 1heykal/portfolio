@@ -1,8 +1,14 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { combineLatest } from 'rxjs';
+import { MainComponent } from './components/main/main.component';
+import { HomeLayoutComponent } from './components/home-layout/home-layout.component';
 
 const routes: Routes = [
-  { path: 'user', loadChildren: () => import('src/app/components/header/header.module').then(m => m.HeaderModule) }
+  {path: '', component: HomeLayoutComponent, children: [
+    { path: '', component: MainComponent}
+  ]}
 ];
 
 @NgModule({
@@ -10,3 +16,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

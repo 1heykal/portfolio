@@ -1,0 +1,32 @@
+mat-card{
+    width: 45%;
+    padding: 50px;
+}
+
+
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    
+  }
+  img {
+  }
+  
+
+  #fighters{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #engineer {
+    background-color: #14213d;
+  }
+
+  #writer{
+    background-color: #fca311;
+  }
+  #writerBtn {
+    background-image: url('/src/assets/svgs/binary.svg');
+  }
