@@ -1,0 +1,32 @@
+ul{
+    display: inline-block;
+    
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 20vw;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+.img{
+    border: 1px solid ghostwhite;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+li{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: ghostwhite;
+}
