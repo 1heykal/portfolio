@@ -1,14 +1,22 @@
 <div class="projects">
-    <div class="project" *ngFor="let project of projects">
-        <a class="img" [href]="project.repoURL" target="_blank">
-            <img [src]="project.imgpath">
-            <h3>{{project.name}}</h3>
-            <h5>{{project.description}}</h5>
-        </a>
-        <ul>
-            <li *ngFor="let skill of project.skills">
-               {{skill}}
-            </li>
-        </ul>
-    </div>
+    <ng-container *ngFor="let project of projects; index as i">
+        <div class="project">
+            <a *ngIf="i % 2 == 0" class="img" [href]="project.repoURL" target="_blank">
+                <img [src]="project.imgpath">
+                <h3>{{project.name}}</h3>
+                <h5>{{project.description}}</h5>
+            </a>
+            <ul>
+                <li *ngFor="let skill of project.skills">
+                    {{skill}}
+                </li>
+            </ul>
+            <a *ngIf="i % 2 != 0" class="img" [href]="project.repoURL" target="_blank">
+                <img [src]="project.imgpath">
+                <h3>{{project.name}}</h3>
+                <h5>{{project.description}}</h5>
+            </a>
+        </div>
+        <hr *ngIf="!(i == projects.length - 1)">
+    </ng-container>
 </div>

@@ -24,6 +24,16 @@ export class ProjectsComponent {
         efficiency.`, ` Implemented JWT Tokens and Refresh Tokens for enhanced privacy and security, ensuring compliance with
         data protection standards.`]
       },
+      {
+        name: 'Home Compass Web API',
+        description: 'An app to help and empower the homeless.',
+        imgpath: 'assets/imgs/compass.png',
+        repoURL: 'https://github.com/1heykal/home-compass-api',
+        skills: [`Led the inception and execution of the Home Compass project, from requirements gathering to database
+        schema design.`, ` Facilitated full CRUD operations and repository management, optimizing data access and manipulation
+        efficiency.`, ` Implemented JWT Tokens and Refresh Tokens for enhanced privacy and security, ensuring compliance with
+        data protection standards.`]
+      },
     
     ]
   }

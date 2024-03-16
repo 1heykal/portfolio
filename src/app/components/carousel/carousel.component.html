@@ -1,0 +1,14 @@
+<h1 style="color: green; 
+		text-align:center;"> 
+		GeeksforGeeks 
+</h1> 
+<h3>Angular PrimeNG Carousel Component</h3> 
+<p-carousel [value]="tutorials"> 
+	<ng-template let-item pTemplate="item"> 
+		<h4>Tutorial: {{ item.title }}</h4> 
+		<p-image [src]="item.image" 
+				alt="Image"
+				width="700px"> 
+		</p-image> 
+	</ng-template> 
+</p-carousel>
