@@ -4,10 +4,10 @@
 <div class="card">
     <p-carousel [value]="projects" [numVisible]="2" [numScroll]="2" [circular]="true" [autoplayInterval]="5000">
         <ng-template let-project pTemplate="item">
-            <div class="product-item">
-                <div class="product-item-content">
+            <div class="project-item">
+                <div class="project-item-content">
                     <div class="mb-3">
-                        <img [src]="project.imgpath" [alt]="project.name" class="product-image" />
+                        <img [src]="project.imgpath" [alt]="project.name" class="project-image" />
                     </div>
                     <div>
                         <h4 class="mb-1">{{ project.name }}</h4>
