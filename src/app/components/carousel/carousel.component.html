@@ -1,10 +1,8 @@
-<h1 style="color: green; 
-		text-align:center;"> 
-		GeeksforGeeks 
+<h1 style=" text-align:center;"> 
+		Projects 
 </h1> 
-<h3>Projects</h3> 
 <div class="card">
-    <p-carousel [value]="projects" [numVisible]="2" [numScroll]="1">
+    <p-carousel [value]="projects" [numVisible]="2" [numScroll]="2" [circular]="true" [autoplayInterval]="5000">
         <ng-template let-project pTemplate="item">
             <div class="product-item">
                 <div class="product-item-content">
@@ -13,20 +11,11 @@
                     </div>
                     <div>
                         <h4 class="mb-1">{{ project.name }}</h4>
-                        <h6 class="mt-0 mb-3">{{project.description}}</h6>
+                        <h5 class="mt-0 mb-3">{{project.description}}</h5>
                         <div class="mt-5 flex align-items-center justify-content-center gap-2">
-                        <!-- <p-button icon="pi pi-search" [rounded]="true" />
-                        <p-button icon="pi pi-star-fill" [rounded]="true">
-							<a href="project.repoURL" target="_blank"></a>
-						</p-button> -->
 						<a [href]="project.repoURL" target="_blank">
-							<button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
-								<mat-icon>open_in_new</mat-icon>
-								
-							  </button>
+							<p-button icon="pi pi-link" [rounded]="true"></p-button>
 						</a>
-						
-
                     </div>
                     </div>
                 </div>
