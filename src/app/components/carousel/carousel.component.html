@@ -15,10 +15,18 @@
                         <h4 class="mb-1">{{ project.name }}</h4>
                         <h6 class="mt-0 mb-3">{{project.description}}</h6>
                         <div class="mt-5 flex align-items-center justify-content-center gap-2">
-                        <p-button icon="pi pi-search" [rounded]="true" />
-                        <p-button icon="pi pi-star-fill" [rounded]="true" severity="secondary">
+                        <!-- <p-button icon="pi pi-search" [rounded]="true" />
+                        <p-button icon="pi pi-star-fill" [rounded]="true">
 							<a href="project.repoURL" target="_blank"></a>
-						</p-button>
+						</p-button> -->
+						<a [href]="project.repoURL" target="_blank">
+							<button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+								<mat-icon>open_in_new</mat-icon>
+								
+							  </button>
+						</a>
+						
+
                     </div>
                     </div>
                 </div>
