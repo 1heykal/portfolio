@@ -15,38 +15,55 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class CarouselComponent implements OnInit{
  
-  tutorials!: Tutorial[]; 
+   projects: Project[] = [];
   
-    constructor(private primengConfig: PrimeNGConfig) { } 
-  
+  constructor(){
+    this.projects = [
+      {
+        name: 'Home Compass Web API',
+        description: 'An app to help and empower the homeless.',
+        imgpath: 'assets/imgs/compass.png',
+        repoURL: 'https://github.com/1heykal/home-compass-api',
+        skills: [`Led the inception and execution of the Home Compass project, from requirements gathering to database
+        schema design.`, ` Facilitated full CRUD operations and repository management, optimizing data access and manipulation
+        efficiency.`, ` Implemented JWT Tokens and Refresh Tokens for enhanced privacy and security, ensuring compliance with
+        data protection standards.`]
+      },
+      {
+        name: 'Home Compass Web API',
+        description: 'An app to help and empower the homeless.',
+        imgpath: 'assets/imgs/compass.png',
+        repoURL: 'https://github.com/1heykal/home-compass-api',
+        skills: [`Led the inception and execution of the Home Compass project, from requirements gathering to database
+        schema design.`, ` Facilitated full CRUD operations and repository management, optimizing data access and manipulation
+        efficiency.`, ` Implemented JWT Tokens and Refresh Tokens for enhanced privacy and security, ensuring compliance with
+        data protection standards.`]
+      },
+      {
+        name: 'Home Compass Web API',
+        description: 'An app to help and empower the homeless.',
+        imgpath: 'assets/imgs/compass.png',
+        repoURL: 'https://github.com/1heykal/home-compass-api',
+        skills: [`Led the inception and execution of the Home Compass project, from requirements gathering to database
+        schema design.`, ` Facilitated full CRUD operations and repository management, optimizing data access and manipulation
+        efficiency.`, ` Implemented JWT Tokens and Refresh Tokens for enhanced privacy and security, ensuring compliance with
+        data protection standards.`]
+      },
+      {
+        name: 'Home Compass Web API',
+        description: 'An app to help and empower the homeless.',
+        imgpath: 'assets/imgs/compass.png',
+        repoURL: 'https://github.com/1heykal/home-compass-api',
+        skills: [`Led the inception and execution of the Home Compass project, from requirements gathering to database
+        schema design.`, ` Facilitated full CRUD operations and repository management, optimizing data access and manipulation
+        efficiency.`, ` Implemented JWT Tokens and Refresh Tokens for enhanced privacy and security, ensuring compliance with
+        data protection standards.`]
+      },
+    
+    ];
+}  
     ngOnInit() { 
-        this.tutorials = [ 
-            { 
-                title: 'Web MH ', 
-                image: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210420155051/WebMH.png', 
-            }, 
-            { 
-                title: 'Interview Experience ', 
-                image: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210420112859/IntExp.png', 
-            }, 
-            { 
-                title: 'GeeksforGeeks Logo ', 
-                image: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210419113249/gfg-new-logo-min.png', 
-            }, 
-            { 
-                title: 'GeeksforGeeks Carnival ', 
-                image: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210418122505/132_00_00_Mailheader-min.png', 
-            }, 
-            { 
-                title: 'Python Course ', 
-                image: 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20211028203138/GeeksforGeeks-Python-Foundation-Course-Learn-Python-from-Scratch-in-Hindi.png', 
-            }, 
-        ]; 
+        
     } 
 } 
 export interface Tutorial { 
