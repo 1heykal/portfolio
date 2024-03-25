@@ -1,16 +1,17 @@
 <h1 style="text-align: center;">Training</h1>
-<mat-card *ngFor="let training of training">
-    <mat-card-header>
-      <mat-card-title>{{training.title}}</mat-card-title>
-      <mat-card-subtitle>{{training.trainer}}</mat-card-subtitle>
-      <mat-card-content *ngFor="let detail of training.details">
-        {{detail}}
-      </mat-card-content>
-    </mat-card-header>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
-  <br>
-  <mat-card>
+<div class="trainings">
+    <mat-card  class="example-card" *ngFor="let training of trainings">
+        <mat-card-header>
+          <mat-card-title>{{training.title}}</mat-card-title>
+          <mat-card-subtitle>{{training.trainer}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content *ngFor="let detail of training.details">
+            <div style="margin: 5px">
+                {{detail}}
+            </div>
+          </mat-card-content>
+      </mat-card>
+      <br>
+    <mat-card> 
+</mat-card>
+</div>
